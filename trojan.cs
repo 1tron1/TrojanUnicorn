@@ -12,7 +12,7 @@ using System.Net;
 using System.Diagnostics;
 using System.Threading;
 
-namespace XantiVirus
+namespace Trojan
 {
     using System.Diagnostics;
     using System.Net.NetworkInformation;
